@@ -10,12 +10,9 @@ const game = {
   }
 }
 getGuess: function(){
-  let guess 
-  do{
-    while(isNaN(guess) || guess > this.smallestNum || guess < this.largestNum)
-    guess = parseInt()
-    prompt(`Enter a guess between ${this.smallestNum} and ${this.largestNum}`)
-  }
-  return guess
-
+  let guess
+  while (isNaN(guess) || guess < this.smallestNum || guess > this.biggestNum)
+  guess = parseInt(prompt(`Enter a number between ${this.smallestNum} and ${this.smallestNum}`))
+  
 }
+return guess
