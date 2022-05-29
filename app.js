@@ -24,7 +24,7 @@ const game = {
   },
   render: function() {
     if (this.prevGuesses[this.prevGuesses.length -1] === this.secretNum){
-      alert(`Congrats you guessed the ${this.secretNum}`)
+      alert(`Congrats you guessed the ${this.secretNum}: in ${this.prevGuesses.length} guesses`)
     } else if (this.prevGuesses[this.prevGuesses.length -1] > this.secretNum){
       alert(`Your guess is to High guess again. previous guesses: ${this.prevGuesses.join()}`)
     } else if (this.prevGuesses[this.prevGuesses.length -1] < this.secretNum){
