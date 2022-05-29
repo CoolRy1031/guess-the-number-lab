@@ -26,9 +26,9 @@ const game = {
     if (this.prevGuesses[this.prevGuesses.length -1] === this.secretNum){
       alert(`Congrats you guessed the ${this.secretNum}`)
     } else if (this.prevGuesses[this.prevGuesses.length -1] > this.secretNum){
-      alert(`Your guess is to High guess again`)
+      alert(`Your guess is to High guess again. previous guesses: ${this.prevGuesses.join()}`)
     } else if (this.prevGuesses[this.prevGuesses.length -1] < this.secretNum){
-      alert(`Your guess is to Low guess again`)
+      alert(`Your guess is to Low guess again. previous guesses: ${this.prevGuesses.join()}`)
     }
 
 
